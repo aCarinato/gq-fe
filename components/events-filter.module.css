@@ -1,0 +1,453 @@
+/* MAIN CONTAINER */
+
+.mainContainer {
+  display: flex;
+  height: 5rem;
+  width: 100%;
+}
+
+.filterSwitch {
+  text-align: center;
+  padding: 0.75rem;
+  color: #616161;
+  font-weight: bold;
+}
+
+/* MY DROPDOWN */
+
+/* Dropdown Opener-Closer */
+
+.drowdownWrapper {
+  width: 15rem;
+  margin: auto;
+}
+
+.categoriesDropdown {
+  height: 3rem;
+  width: 100%;
+  background-color: white;
+  border: 1px solid #616161;
+  cursor: pointer;
+  /* margin: auto; */
+}
+
+.containerOpener {
+  display: flex;
+  height: 100%;
+  line-height: 3rem;
+}
+
+.containerOpenerLabel {
+  width: 15rem;
+  text-align: center;
+  font-weight: bold;
+}
+
+.containerOpenerArrow {
+  position: relative;
+  width: 3rem;
+  /* width: 20%; */
+  padding: 1rem 0.75rem;
+}
+
+.arrowUp {
+  position: relative;
+  width: 0;
+  height: 0;
+  border-left: 0.75rem solid transparent;
+  border-right: 0.75rem solid transparent;
+
+  border-bottom: 0.75rem solid #616161;
+}
+
+.arrowDown {
+  position: relative;
+  width: 0;
+  height: 0;
+  border-left: 0.75rem solid transparent;
+  border-right: 0.75rem solid transparent;
+
+  border-top: 0.75rem solid #616161;
+}
+
+/* Dropdown Category Items */
+
+.categoriesList {
+  width: 15rem;
+  /* width: 100%; */
+  height: 40rem;
+  padding: 0.5rem;
+  background-color: white;
+  border: 1px solid #616161;
+  position: absolute;
+  overflow-y: scroll;
+  z-index: 4;
+  margin: auto;
+}
+
+.container {
+  height: 2.5rem;
+  display: flex;
+  line-height: 2.5rem;
+  /* position: relative;
+    z-index: 5; */
+}
+
+.checkmarkOuter {
+  width: 2rem;
+  position: relative;
+  cursor: pointer;
+  padding: 0.75rem;
+  padding-left: 0.5rem;
+}
+
+.checkmark {
+  position: relative;
+  width: 1rem;
+  height: 1rem;
+  cursor: pointer;
+  border: 1px solid #616161;
+  border-radius: 50%;
+}
+
+.checkmarkSelectedRed {
+  position: relative;
+  background-color: #ff6b6b;
+  width: 1rem;
+  height: 1rem;
+  cursor: pointer;
+  border: 1px solid #ff6b6b;
+  border-radius: 50%;
+}
+
+.checkmarkSelectedBlue {
+  position: relative;
+  background-color: #1a535c;
+  width: 1rem;
+  height: 1rem;
+  cursor: pointer;
+  border: 1px solid #1a535c;
+  border-radius: 50%;
+}
+
+.checkmarkSelectedYellow {
+  position: relative;
+  background-color: #ffd100;
+  width: 1rem;
+  height: 1rem;
+  cursor: pointer;
+  border: 1px solid #ffd100;
+  border-radius: 50%;
+}
+
+.checkmarkSelectedCyan {
+  position: relative;
+  background-color: #4ecdc4;
+  width: 1rem;
+  height: 1rem;
+  cursor: pointer;
+  border: 1px solid #4ecdc4;
+  border-radius: 50%;
+}
+
+.label {
+  padding-left: 0.5rem;
+  cursor: pointer;
+  font-size: 0.7rem;
+  font-weight: bold;
+}
+
+/* Dropdown Dates Items */
+
+.datesList {
+  width: 15rem;
+  padding: 0.5rem;
+  background-color: white;
+  border: 1px solid #616161;
+  position: absolute;
+  overflow-y: scroll;
+  z-index: 4;
+  margin: auto;
+}
+
+/* Segnala Evento Button */
+
+.btnPost {
+  /* width: 18rem; */
+  width: 70%;
+  height: 3rem;
+  line-height: 3rem;
+  margin: auto;
+  background-color: #616161;
+  color: white;
+  cursor: pointer;
+  font-weight: bolder;
+  border-radius: 0.25rem;
+}
+
+.btnPost:hover {
+  background-color: white;
+  border: 1px solid #616161;
+  color: #616161;
+}
+
+@media (min-width: 1201px) {
+  .mainContainer {
+    display: flex;
+    height: 5rem;
+  }
+
+  .filterSwitch {
+    font-size: 1.45rem;
+    width: 100%;
+    word-wrap: break-word;
+    padding: 0 2rem;
+
+    margin: auto;
+    margin-top: 0.75rem;
+  }
+
+  .mainContainerSmallColumn {
+    width: 33%;
+    flex-grow: 1;
+  }
+
+  .mainContainerLargeColumn {
+    width: 67%;
+    display: flex;
+    flex-grow: 1;
+  }
+
+  .largeColumnColumn {
+    width: 33%;
+    text-align: center;
+    padding: 0.5rem;
+  }
+
+  .drowdownWrapper {
+    margin-top: 0.7rem;
+    font-size: 0.8rem;
+  }
+
+  .containerOpenerLabel {
+    font-size: 1rem;
+  }
+
+  .label {
+    padding-left: 0.5rem;
+    cursor: pointer;
+    font-size: 0.7rem;
+    font-weight: bold;
+  }
+
+  .arrowUp {
+    width: 0;
+    height: 0;
+    border-left: 0.5rem solid transparent;
+    border-right: 0.5rem solid transparent;
+
+    border-bottom: 0.5rem solid #616161;
+  }
+
+  .arrowDown {
+    width: 0;
+    height: 0;
+    border-left: 0.5rem solid transparent;
+    border-right: 0.5rem solid transparent;
+
+    border-top: 0.5rem solid #616161;
+  }
+
+  .btnPost {
+    width: 15rem;
+    height: 3rem;
+    line-height: 3rem;
+    margin: auto;
+    font-size: 1rem;
+    font-weight: bolder;
+    margin-top: 0.7rem;
+  }
+}
+
+@media (min-width: 1025px) and (max-width: 1200px) {
+  .mainContainer {
+    display: flex;
+    height: 5rem;
+  }
+
+  .filterSwitch {
+    font-size: 1.25rem;
+    height: 100%;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    /* padding: 1rem; */
+    /* line-height: 2.5rem; */
+  }
+
+  .mainContainerSmallColumn {
+    width: 33%;
+    flex-grow: 1;
+  }
+
+  .mainContainerLargeColumn {
+    width: 67%;
+    display: flex;
+    flex-grow: 1;
+  }
+
+  .largeColumnColumn {
+    width: 33%;
+    text-align: center;
+    padding: 0.5rem;
+  }
+
+  .drowdownWrapper {
+    width: 12rem;
+    margin: auto;
+    font-size: 0.8rem;
+    margin-top: 0.75rem;
+  }
+
+  .categoriesDropdown {
+    height: 2.5rem;
+  }
+
+  .containerOpener {
+    line-height: 2.5rem;
+  }
+
+  .containerOpenerLabel {
+    width: 10rem;
+  }
+
+  .label {
+    padding-left: 0.5rem;
+    cursor: pointer;
+    font-size: 0.65rem;
+  }
+
+  .containerOpenerArrow {
+    width: 2.5rem;
+    padding: 0.75rem 0.5rem;
+  }
+
+  .arrowUp {
+    width: 0;
+    height: 0;
+    border-left: 0.5rem solid transparent;
+    border-right: 0.5rem solid transparent;
+
+    border-bottom: 0.5rem solid #616161;
+  }
+
+  .arrowDown {
+    width: 0;
+    height: 0;
+    border-left: 0.5rem solid transparent;
+    border-right: 0.5rem solid transparent;
+
+    border-top: 0.5rem solid #616161;
+  }
+
+  .btnPost {
+    /* width: 18rem; */
+    width: 12rem;
+    height: 2.5rem;
+    line-height: 2.5rem;
+    margin: auto;
+    font-size: 0.85rem;
+    font-weight: bolder;
+    margin-top: 0.75rem;
+  }
+
+  /* .categoriesList {
+      width: 12rem;
+    } */
+
+  .datesList {
+    width: 12rem;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .mainContainer {
+    display: flex;
+    height: 4rem;
+  }
+
+  .filterSwitch {
+    font-size: 1rem;
+    height: 100%;
+  }
+
+  .mainContainerSmallColumn {
+    width: 33%;
+  }
+
+  .mainContainerLargeColumn {
+    width: 67%;
+    display: flex;
+  }
+
+  .largeColumnColumn {
+    width: 33%;
+    text-align: center;
+    /* padding: 0.5rem; */
+  }
+
+  .drowdownWrapper {
+    width: 8rem;
+    margin: auto;
+    font-size: 0.75rem;
+    margin-top: 1rem;
+  }
+
+  .categoriesDropdown {
+    height: 2rem;
+  }
+
+  .containerOpener {
+    line-height: 2rem;
+  }
+
+  .containerOpenerLabel {
+    width: 6rem;
+  }
+
+  .containerOpenerArrow {
+    position: relative;
+    width: 2rem;
+    padding: 0.625rem 0.5rem;
+  }
+
+  .arrowUp {
+    width: 0;
+    height: 0;
+    border-left: 0.5rem solid transparent;
+    border-right: 0.5rem solid transparent;
+
+    border-bottom: 0.5rem solid #616161;
+  }
+
+  .arrowDown {
+    width: 0;
+    height: 0;
+    border-left: 0.5rem solid transparent;
+    border-right: 0.5rem solid transparent;
+
+    border-top: 0.5rem solid #616161;
+  }
+
+  /* Segnala Evento Button */
+
+  .btnPost {
+    /* width: 18rem; */
+    width: 9rem;
+    height: 2rem;
+    line-height: 2rem;
+    margin: auto;
+    font-size: 0.65rem;
+    font-weight: bolder;
+    margin-top: 1rem;
+  }
+}
