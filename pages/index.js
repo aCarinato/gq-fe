@@ -6,7 +6,7 @@ import EventsFilter from '../components/events-filter';
 // import Search from '../Components/Search';
 import { useState, useEffect } from 'react';
 //Main Context
-import { useMainContext } from '../Context/Context';
+import { useMainContext } from '../context/Context';
 
 function App() {
   const { setEventData, reRenderMarkers } = useMainContext();
