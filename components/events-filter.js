@@ -6,8 +6,6 @@ import classes from './events-filter.module.css';
 import DropdownCategories from './dropdown-categories';
 import CATEGORIES from '../data/categories';
 
-import { useMainContext } from '../Context/Context';
-
 // import * as ga from '../../lib/google-analytics';
 
 function EventsFilter(props) {
